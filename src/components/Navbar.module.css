@@ -2,14 +2,17 @@ body {
   background-color: #18181b;
   user-select: none;
 }
-
+.fixed {
+  position: fixed;
+  left: 0;
+}
 .side {
   height: 100vh;
   width: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 48px;
+  margin-left: 25px;
   margin-right: 10px;
 }
 
@@ -41,4 +44,45 @@ body {
   left: 40px;
   width: 60px;
   height: 60px;
+}
+
+.phoneContainer {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.drawerPaper {
+  background-color: #18181b;
+  opacity: 90%;
+  width: 100%;
+}
+.blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #18181b;
+  filter: blur(18px);
+  z-index: -1;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.drawerNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 60%;
+  width: 100%;
+  margin: auto;
+}
+.drawerNavContent {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
 }

@@ -39,9 +39,8 @@ const Landing = () => {
             elit.
           </div>
           <div className={styles.activity}>
-            {/* <img src="https://activity-graph.herokuapp.com/graph?username=utkarsh-1905&theme=xcode&hide_title=true&area=true" /> */}
             <button className="btn btn-outline-danger">
-              <Download size={16} color="#dc3545" /> Download Resume{" "}
+              <Download size={16} color="#dc3545" /> Download Resume
             </button>
             <button className="btn btn-outline-success">
               <GithubLogo size={16} color="#198754" />

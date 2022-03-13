@@ -20,6 +20,8 @@ body {
 .titleText {
   color: white;
   font-size: 1.75rem;
+  width: 80%;
+  margin: auto;
 }
 
 .hero {
@@ -37,17 +39,19 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  width: 100%;
+  height: inherit;
+  justify-content: flex-start;
 }
 
 .about {
   color: white;
-  text-align: end;
+  text-align: right;
+  padding-bottom: 10%;
   font-size: 1.25rem;
   font-weight: 600;
   font-family: "IBM Plex Mono";
-  align-self: flex-start;
-  padding-bottom: 5%;
+  justify-self: flex-start;
 }
 
 .activity {
@@ -55,12 +59,43 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
 }
 
 @media (min-width: 1440px) {
   .hero img {
     height: 600px;
     width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    overflow: hidden;
+    flex-direction: column;
+    width: 100%;
+    padding: 5px;
+  }
+  .activity {
+    flex-direction: column;
+  }
+  .hero img {
+    height: 300px;
+    width: 300px;
+  }
+  .titleText {
+    font-size: 1.25rem;
+    text-align: left;
+  }
+  .title {
+    height: 150px;
+  }
+  .about {
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    color: #6666;
+  }
+  .activity button {
+    margin-bottom: 1rem;
   }
 }

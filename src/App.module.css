@@ -21,12 +21,23 @@
     transform: translateY(0);
   }
   30% {
-    transform: translateY(-100px);
+    transform: translateY(-25px);
   }
   50% {
     transform: translateY(0);
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+.about_me {
+  width: 100vw;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .landing_container {
+    flex-direction: column;
   }
 }
