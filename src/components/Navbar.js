@@ -20,7 +20,7 @@ const Navbar = () => {
     } else {
       setShow(false);
     }
-  });
+  }, []);
 
   if (show) {
     return (
@@ -37,11 +37,15 @@ const Navbar = () => {
           anchor="left"
           open={showDrawer}
         >
-          <Button className={styles.close} onClick={() => setShowDrawer(false)}>
+          <button className={styles.close} onClick={() => setShowDrawer(false)}>
             <X size={32} color="#6666ff" />
-          </Button>
+          </button>
           <div className={styles.drawerNav}>
-            <div className={styles.drawerNavContent}>
+            <a
+              href="https://github.com/utkarsh-1905"
+              target="_blank"
+              rel="noreferrer"
+            >
               <GithubLogo
                 size={48}
                 className={styles.space}
@@ -49,8 +53,12 @@ const Navbar = () => {
                 weight="fill"
               />{" "}
               Github
-            </div>
-            <div className={styles.drawerNavContent}>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/utkarsh-tripathi-80a0ab192/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <LinkedinLogo
                 size={48}
                 className={styles.space}
@@ -58,8 +66,8 @@ const Navbar = () => {
                 weight="fill"
               />{" "}
               LinkedIN
-            </div>
-            <div className={styles.drawerNavContent}>
+            </a>
+            <a href="#projects">
               <FolderNotchOpen
                 size={48}
                 className={styles.space}
@@ -67,8 +75,8 @@ const Navbar = () => {
                 weight="fill"
               />{" "}
               Projects
-            </div>
-            <div className={styles.drawerNavContent}>
+            </a>
+            <a href="#contact">
               <PaperPlaneTilt
                 size={48}
                 className={styles.space}
@@ -76,7 +84,7 @@ const Navbar = () => {
                 weight="fill"
               />{" "}
               Contact Me
-            </div>
+            </a>
           </div>
         </Drawer>
       </div>
@@ -86,31 +94,41 @@ const Navbar = () => {
       <div className={styles.fixed}>
         <div className={styles.side}>
           <nav>
-            <a className={styles.space1}>
-              <img className={styles.avatar} src={Avatar} />
+            <a className={styles.space1} href="/">
+              <img className={styles.avatar} alt="avatar" src={Avatar} />
             </a>
-            <a className={styles.house}>
+            <a
+              className={styles.house}
+              href="https://github.com/utkarsh-1905"
+              target="_blank"
+              rel="noreferrer"
+            >
               <GithubLogo
                 size={32}
                 className={styles.space}
                 color="rgb(102, 102, 255)"
               />
             </a>
-            <a className={styles.house}>
+            <a
+              className={styles.house}
+              href="https://www.linkedin.com/in/utkarsh-tripathi-80a0ab192/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <LinkedinLogo
                 size={32}
                 className={styles.space}
                 color="#6666ff"
               />
             </a>
-            <a className={styles.house}>
+            <a className={styles.house} href="#project">
               <FolderNotchOpen
                 size={32}
                 className={styles.space}
                 color="#6666ff"
               />
             </a>
-            <a className={styles.house}>
+            <a className={styles.house} href="#contact">
               <PaperPlaneTilt
                 size={32}
                 className={styles.space}

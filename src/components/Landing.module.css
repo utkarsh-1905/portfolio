@@ -14,7 +14,7 @@ body {
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin: auto;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .titleText {
@@ -69,6 +69,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  .container {
+    height: auto;
+  }
+
   .hero {
     overflow: hidden;
     flex-direction: column;
@@ -85,6 +89,7 @@ body {
   .titleText {
     font-size: 1.25rem;
     text-align: left;
+    margin-top: 2rem;
   }
   .title {
     height: 150px;

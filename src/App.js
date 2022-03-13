@@ -22,6 +22,8 @@ function App() {
       <section className={styles.about_me} id="about">
         <About />
       </section>
+      <section id="projects"></section>
+      <section id="contact"></section>
     </>
   );
 }
