@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle";
+import Landing from "./components/Landing";
+import Navbar from "./components/Navbar";
+import styles from "./App.module.css";
+import { ArrowDown } from "phosphor-react";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <section className={styles.landing_container}>
+        <Navbar />
+        <Landing />
+        <ArrowDown className={styles.arrow} size={48} color="#6666ff" />
+      </section>
+      <section className={styles.about_me}></section>
+    </>
   );
 }
 

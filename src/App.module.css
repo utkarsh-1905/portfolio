@@ -1,0 +1,32 @@
+.landing_container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  top: 90%;
+  opacity: 50%;
+  animation: bounce ease 1s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-100px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
