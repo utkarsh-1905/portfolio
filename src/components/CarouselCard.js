@@ -7,11 +7,11 @@ import { Button, CardActionArea, CardActions } from "@mui/material";
 
 export default function CarouselCard(props) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345, bgcolor: "#e0e0e0" }}>
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
+          height="200"
           image={props.image}
           alt={props.title}
         />
@@ -25,7 +25,7 @@ export default function CarouselCard(props) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
+        <Button size="small" style={{ color: "#6666ff" }}>
           View Project
         </Button>
       </CardActions>

@@ -22,7 +22,7 @@ const TickerRow = () => {
                 className="devicon-express-original-wordmark"
                 style={{ color: "#ffffff" }}
               ></i>
-              <i class="devicon-bootstrap-plain colored"></i>
+              <i className="devicon-bootstrap-plain colored"></i>
               <i className="devicon-java-plain colored"></i>
               <i className="devicon-c-plain colored"></i>
               <i className="devicon-cplusplus-plain colored"></i>

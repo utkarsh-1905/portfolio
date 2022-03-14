@@ -75,7 +75,7 @@ const Navbar = () => {
               />{" "}
               LinkedIN
             </a>
-            <a href="#projects">
+            <a href="#project">
               <FolderNotchOpen
                 size={48}
                 className={styles.space}

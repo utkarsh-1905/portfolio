@@ -39,3 +39,17 @@
 .infoText a:hover {
   cursor: pointer;
 }
+
+.mobileSwiper {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: fit-content;
+  }
+}

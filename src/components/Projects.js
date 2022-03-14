@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Keyboard,
   Mousewheel,
   Navigation,
   Controller,
   Autoplay,
-  Pagination,
   EffectCards,
 } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -22,32 +21,22 @@ const Projects = () => {
       setWidth(window.innerWidth);
     });
   }, []);
-  return (
-    <div className={styles.container}>
-      <div className={styles.title}>Projects</div>
-      <div className={styles.swiperContainer}>
-        {width > 768 ? (
+  if (width > 768) {
+    return (
+      <div className={styles.container}>
+        <div className={styles.title}>Projects</div>
+        <div className={styles.swiperContainer}>
           <Swiper
-            modules={[
-              Keyboard,
-              Mousewheel,
-              Pagination,
-              Navigation,
-              Controller,
-              Autoplay,
-            ]}
+            modules={[Keyboard, Mousewheel, Navigation, Controller, Autoplay]}
             spaceBetween={30}
             slidesPerView={3}
             keyboard={{ enabled: true }}
             loop={true}
-            pagination={{
-              type: "fraction",
-            }}
             autoplay={{
               delay: 3500,
               disableOnInteraction: false,
             }}
-            navigation={true}
+            // navigation={true}
             mousewheel={true}
             controller={true}
             className={styles.swiper}
@@ -82,21 +71,38 @@ const Projects = () => {
             </SwiperSlide>
             ...
           </Swiper>
-        ) : (
+        </div>
+        <p className={styles.infoText}>
+          View more on{" "}
+          <a
+            className="text-success"
+            href="https://github.com/utkarsh-1905"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Github
+          </a>
+          .
+        </p>
+        <p className={styles.infoText}>
+          To collaborate,{" "}
+          <a className="text-info" href="#contact">
+            Click Here!!
+          </a>
+        </p>
+      </div>
+    );
+  } else {
+    return (
+      <div className={styles.container}>
+        <div className={styles.title}>Projects</div>
+        <div className={styles.mobileSwiper}>
           <Swiper
-            modules={[
-              Keyboard,
-              Mousewheel,
-              Navigation,
-              Controller,
-              Autoplay,
-              EffectCards,
-            ]}
-            keyboard={{ enabled: true }}
             effect={"cards"}
             grabCursor={true}
-            mousewheel={true}
-            className={styles.swiper}
+            modules={[EffectCards]}
+            // mousewheel={true}
+            // className={styles.swiper}
           >
             <SwiperSlide>
               <CarouselCard
@@ -128,28 +134,28 @@ const Projects = () => {
             </SwiperSlide>
             ...
           </Swiper>
-        )}
+        </div>
+        <p className={styles.infoText}>
+          View more on{" "}
+          <a
+            className="text-success"
+            href="https://github.com/utkarsh-1905"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Github
+          </a>
+          .
+        </p>
+        <p className={styles.infoText}>
+          To collaborate,{" "}
+          <a className="text-info" href="#contact">
+            Click Here!!
+          </a>
+        </p>
       </div>
-      <p className={styles.infoText}>
-        View more on{" "}
-        <a
-          className="text-success"
-          href="https://github.com/utkarsh-1905"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Github
-        </a>
-        .
-      </p>
-      <p className={styles.infoText}>
-        To collaborate,{" "}
-        <a className="text-info" href="#contact">
-          Click Here!!
-        </a>
-      </p>
-    </div>
-  );
+    );
+  }
 };
 
 export default Projects;

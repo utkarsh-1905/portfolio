@@ -40,7 +40,7 @@ function App() {
         <About />
       </section>
       <section id="project">
-        <Projects />
+        <Projects change={showArrow} />
       </section>
       <section id="contact"></section>
     </>
