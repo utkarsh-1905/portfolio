@@ -44,7 +44,7 @@ body {
 }
 
 .about {
-  color: white;
+  color: white !important;
   text-align: right;
   padding-bottom: 10%;
   font-size: 1.25rem;
@@ -103,7 +103,7 @@ body {
     width: 80%;
     text-align: justify;
   }
-  .activity button {
+  .activity a {
     margin-bottom: 1rem;
   }
 }
