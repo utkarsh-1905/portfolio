@@ -39,7 +39,7 @@ function App() {
       <section className={styles.about_me} id="about">
         <About />
       </section>
-      <section id="projects">
+      <section id="project">
         <Projects />
       </section>
       <section id="contact"></section>
