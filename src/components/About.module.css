@@ -43,6 +43,10 @@
   padding: 1rem;
 }
 
+.purple {
+  color: #6666ff;
+}
+
 @media (max-width: 768px) {
   .about {
     flex-direction: column;

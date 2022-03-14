@@ -8,6 +8,7 @@ import {
   LinkedinLogo,
   InstagramLogo,
 } from "phosphor-react";
+import Resume from "../assets/resume.png";
 
 const Contact = () => {
   return (
@@ -15,11 +16,12 @@ const Contact = () => {
       <div className={styles.title}>Contact</div>
       <div className={styles.content}>
         <div className={styles.social}>
-          lorem ipsum dolor sit amet consectetur adipisicing elit. lorem ipsum
-          dolor sit amet consectetur adipisicing elit. lorem ipsum dolor sit
-          amet consectetur adipisicing elit.
+          <p className={styles.socialText}>
+            Hey, yoy can find me on these social media platforms. Additionally,
+            you can reach me directly through the contact form.
+          </p>
           <div className={styles.socialButtons}>
-            <a className="btn btn-outline-light ">
+            <a className="btn btn-outline-light" href={Resume} download>
               <Download size={16} className="text-light" /> Download Resume
             </a>
             <a

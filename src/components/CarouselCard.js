@@ -26,7 +26,9 @@ export default function CarouselCard(props) {
       </CardActionArea>
       <CardActions>
         <Button size="small" style={{ color: "#6666ff" }}>
-          View Project
+          <a href={props.github} target="_blank" rel="noreferrer">
+            View Project
+          </a>
         </Button>
       </CardActions>
     </Card>

@@ -27,23 +27,26 @@ const Landing = () => {
         <img src={Hero} alt="hero" />
         <div className={styles.content}>
           <div className={styles.about}>
-            lorem ipsum dolor sit amet consectetur adipisicing elit. lorem ipsum
-            dolor sit amet consectetur adipisicing elit. dolor sit amet
-            consectetur adipisicing elit. dolor sit amet consectetur adipisicing
-            elit. dolor sit amet consectetur adipisicing elit. dolor sit amet
-            elit.
+            I am a curious, hard-working, dedicated learner and developer, and
+            well-acquainted with various technologies. I am solution-driven,
+            focused team player, and willing to learn new technologies.
           </div>
           <div className={styles.activity}>
             {/* <button className="btn btn-outline-danger">
               <Download size={16} color="#dc3545" /> Download Resume
             </button> */}
-            <button className="btn btn-outline-success">
+            <a
+              className="btn btn-outline-success"
+              href="https://github.com/utkarsh-1905"
+              target="_blank"
+              rel="noreferrer"
+            >
               <GithubLogo size={16} color="#198754" />
               Visit Github
-            </button>
-            <button className="btn btn-outline-warning">
+            </a>
+            <a className="btn btn-outline-warning" href="#project">
               <FolderNotchOpen size={16} color="#ffc107" /> View Projects
-            </button>
+            </a>
           </div>
         </div>
       </div>

@@ -20,10 +20,10 @@ const Timeline = () => {
     },
     {
       title: "6 March,2022",
-      cardTitle: "Best First Year Team at Makeathon 4.0",
-      cardSubtitle: "Won the most auspicious hackathon at TIET, Patiala",
+      cardTitle: "Best First Year Team",
+      cardSubtitle: "Makeathon 4.0",
       cardDetailedText:
-        "Part of a team of students who are dedicated to the advancement of the technology and open-source community.",
+        "Created a solution to transfer vitals of heavy BEML machines without internet to a secure cloud database using a pseudo-network connection.",
     },
   ];
 
