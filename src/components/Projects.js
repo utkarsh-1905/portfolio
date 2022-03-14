@@ -114,29 +114,33 @@ const Projects = () => {
             <SwiperSlide>
               <CarouselCard
                 title="Beml Connect"
-                image={MLSC}
-                description="hello world1"
+                image={BEML}
+                description="Created a solution for transfering vitals of heavy BEML machines without internet to a secure cloud database."
+                github="https://github.com/utkarsh-1905/Makeathon-Submisson"
               />
             </SwiperSlide>
             <SwiperSlide>
               <CarouselCard
-                title="Beml Connect"
-                image={MLSC}
-                description="hello world2"
+                title="YelpCamp"
+                image={Yelp}
+                description="Created a full-stack app to list various available campsites in a user-friendly way."
+                github="https://morning-eyrie-85703.herokuapp.com/"
               />
             </SwiperSlide>
             <SwiperSlide>
               <CarouselCard
-                title="Beml Connect"
-                image={MLSC}
-                description="hello world3"
+                title="Password Generator"
+                image={PW}
+                description="Created a password generator using VanillaJS that generates random passwords based on user's input."
+                github="https://github.com/utkarsh-1905/password-generator"
               />
             </SwiperSlide>
             <SwiperSlide>
               <CarouselCard
-                title="Beml Connect"
-                image={MLSC}
-                description="hello world4"
+                title="ISS Tracker"
+                image={ISS}
+                description="Created a web app to track the current position of the International Space Station using VanillaJS."
+                github="https://github.com/utkarsh-1905/ISS-Tracker"
               />
             </SwiperSlide>
             ...
