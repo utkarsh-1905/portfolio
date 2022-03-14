@@ -1,11 +1,6 @@
 import React from "react";
 import styles from "./Landing.module.css";
-import {
-  HandWaving,
-  Download,
-  GithubLogo,
-  FolderNotchOpen,
-} from "phosphor-react";
+import { HandWaving, GithubLogo, FolderNotchOpen } from "phosphor-react";
 import ReactRotatingText from "react-rotating-text";
 import Hero from "../assets/hero.png";
 
@@ -39,9 +34,9 @@ const Landing = () => {
             elit.
           </div>
           <div className={styles.activity}>
-            <button className="btn btn-outline-danger">
+            {/* <button className="btn btn-outline-danger">
               <Download size={16} color="#dc3545" /> Download Resume
-            </button>
+            </button> */}
             <button className="btn btn-outline-success">
               <GithubLogo size={16} color="#198754" />
               Visit Github

@@ -16,6 +16,10 @@
   animation: bounce ease 1s infinite;
 }
 
+.project {
+  overflow: hidden;
+}
+
 @keyframes bounce {
   0% {
     transform: translateY(0);

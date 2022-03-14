@@ -7,6 +7,7 @@ import styles from "./App.module.css";
 import { ArrowDown } from "phosphor-react";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 function App() {
   const [showArrow, setShowArrow] = useState(true);
@@ -39,10 +40,12 @@ function App() {
       <section className={styles.about_me} id="about">
         <About />
       </section>
-      <section id="project">
+      <section className={styles.project} id="project">
         <Projects change={showArrow} />
       </section>
-      <section id="contact"></section>
+      <section id="contact" className="mb-3">
+        <Contact />
+      </section>
     </>
   );
 }
