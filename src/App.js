@@ -6,10 +6,16 @@ import Navbar from "./components/Navbar";
 import styles from "./App.module.css";
 import { ArrowDown } from "phosphor-react";
 import About from "./components/About";
+import Projects from "./components/Projects";
 
 function App() {
   const [showArrow, setShowArrow] = useState(true);
   useEffect(() => {
+    if (window.innerWidth > 768) {
+      setShowArrow(true);
+    } else {
+      setShowArrow(false);
+    }
     window.addEventListener("resize", () => {
       if (window.innerWidth > 768) {
         setShowArrow(true);
@@ -33,7 +39,9 @@ function App() {
       <section className={styles.about_me} id="about">
         <About />
       </section>
-      <section id="projects"></section>
+      <section id="projects">
+        <Projects />
+      </section>
       <section id="contact"></section>
     </>
   );

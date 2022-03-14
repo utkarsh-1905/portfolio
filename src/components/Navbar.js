@@ -16,6 +16,11 @@ const Navbar = () => {
   const [show, setShow] = useState(false);
   const [showDrawer, setShowDrawer] = useState(false);
   useEffect(() => {
+    if (window.innerWidth < 768) {
+      setShow(true);
+    } else {
+      setShow(false);
+    }
     window.addEventListener("resize", () => {
       if (window.innerWidth < 768) {
         setShow(true);

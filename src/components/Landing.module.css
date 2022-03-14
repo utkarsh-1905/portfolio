@@ -93,12 +93,15 @@ body {
   }
   .title {
     height: 150px;
+    padding-top: 0.75rem;
   }
   .about {
     font-weight: 500;
     font-size: 1rem;
     text-align: center;
     color: #6666;
+    width: 80%;
+    text-align: justify;
   }
   .activity button {
     margin-bottom: 1rem;

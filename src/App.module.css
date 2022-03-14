@@ -31,11 +31,6 @@
   }
 }
 
-.about_me {
-  width: 100vw;
-  height: 100vh;
-}
-
 @media (max-width: 768px) {
   .landing_container {
     flex-direction: column;
