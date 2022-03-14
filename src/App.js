@@ -8,6 +8,8 @@ import { ArrowDown } from "phosphor-react";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import ReactDOM from "react-dom";
+import Footer from "./components/Footer";
 
 function App() {
   const [showArrow, setShowArrow] = useState(true);
@@ -46,6 +48,10 @@ function App() {
       <section id="contact" className="mb-3">
         <Contact />
       </section>
+      {ReactDOM.createPortal(
+        <Footer />,
+        document.getElementById("footer-root")
+      )}
     </>
   );
 }
