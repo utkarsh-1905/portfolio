@@ -10,20 +10,23 @@ import {
   List,
 } from "phosphor-react";
 import Avatar from "../assets/Memoji.png";
+import ReactDOM from "react-dom";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
   const [showDrawer, setShowDrawer] = useState(false);
   useEffect(() => {
-    if (window.innerWidth < 768) {
-      setShow(true);
-    } else {
-      setShow(false);
-    }
+    window.addEventListener("resize", () => {
+      if (window.innerWidth < 768) {
+        setShow(true);
+      } else {
+        setShow(false);
+      }
+    });
   }, []);
 
   if (show) {
-    return (
+    return ReactDOM.createPortal(
       <div className={styles.phoneContainer}>
         <Button onClick={() => setShowDrawer(true)}>
           <List size={32} color="#6666ff" />
@@ -87,10 +90,11 @@ const Navbar = () => {
             </a>
           </div>
         </Drawer>
-      </div>
+      </div>,
+      document.getElementById("nav-root")
     );
   } else {
-    return (
+    return ReactDOM.createPortal(
       <div className={styles.fixed}>
         <div className={styles.side}>
           <nav>
@@ -137,7 +141,8 @@ const Navbar = () => {
             </a>
           </nav>
         </div>
-      </div>
+      </div>,
+      document.getElementById("nav-root")
     );
   }
 };

@@ -1,0 +1,29 @@
+.images {
+  font-size: 4rem;
+}
+
+.images i {
+  padding-right: 5rem;
+}
+
+.row {
+  height: 200px;
+}
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+@media (min-width: 1440px) {
+  .images {
+    font-size: 5.5rem;
+  }
+  .images i {
+    padding-right: 6rem;
+  }
+}
+@media (max-width: 768px) {
+  .images {
+    font-size: 3rem;
+  }
+}

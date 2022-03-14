@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
 import Landing from "./components/Landing";
@@ -8,12 +8,23 @@ import { ArrowDown } from "phosphor-react";
 import About from "./components/About";
 
 function App() {
+  const [showArrow, setShowArrow] = useState(true);
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 768) {
+        setShowArrow(true);
+      } else {
+        setShowArrow(false);
+      }
+    });
+  }, []);
+
   return (
     <>
       <section className={styles.landing_container}>
         <Navbar />
         <Landing />
-        {window.innerWidth > 768 && (
+        {showArrow && (
           <a href="#about">
             <ArrowDown className={styles.arrow} size={48} color="#6666ff" />
           </a>
