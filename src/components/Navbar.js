@@ -30,6 +30,10 @@ const Navbar = () => {
     });
   }, []);
 
+  const closeDrawer = () => {
+    setShowDrawer(false);
+  };
+
   if (show) {
     return ReactDOM.createPortal(
       <div className={styles.phoneContainer}>
@@ -44,6 +48,7 @@ const Navbar = () => {
           }}
           anchor="left"
           open={showDrawer}
+          onClick={closeDrawer}
         >
           <button className={styles.close} onClick={() => setShowDrawer(false)}>
             <X size={32} color="#6666ff" />
@@ -81,6 +86,7 @@ const Navbar = () => {
                 className={styles.space}
                 color="#6666ff"
                 weight="fill"
+                onClick={closeDrawer}
               />{" "}
               Projects
             </a>
@@ -90,6 +96,7 @@ const Navbar = () => {
                 className={styles.space}
                 color="#6666ff"
                 weight="fill"
+                onClick={closeDrawer}
               />{" "}
               Contact Me
             </a>

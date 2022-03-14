@@ -54,7 +54,7 @@ body {
 }
 
 .activity {
-  width: 80%;
+  width: 50%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
