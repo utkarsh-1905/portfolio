@@ -13,14 +13,17 @@ const ContactForm = () => {
         type: e.target[2].value,
         description: e.target[3].value,
       };
-      const data = await fetch("http://3.110.51.46:3000/api/contact", {
-        method: "POST",
-        mode: "cors",
-        body: JSON.stringify(body),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      const data = await fetch(
+        "https://nameless-citadel-63635.herokuapp.com/api/contact",
+        {
+          method: "POST",
+          mode: "cors",
+          body: JSON.stringify(body),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
       const json = await data.json();
       if (json.status === "ok") {
         setDone(true);
