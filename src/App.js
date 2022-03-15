@@ -4,7 +4,7 @@ import "bootstrap/dist/js/bootstrap.bundle";
 import Landing from "./components/Landing";
 import Navbar from "./components/Navbar";
 import styles from "./App.module.css";
-import { ArrowDown } from "phosphor-react";
+import { ArrowDown, ArrowUp } from "phosphor-react";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
@@ -30,7 +30,7 @@ function App() {
 
   return (
     <>
-      <section className={styles.landing_container}>
+      <section id="landing" className={styles.landing_container}>
         <Navbar />
         <Landing />
         {showArrow && (
@@ -51,6 +51,14 @@ function App() {
       {ReactDOM.createPortal(
         <Footer />,
         document.getElementById("footer-root")
+      )}
+      {ReactDOM.createPortal(
+        <a href="#landing">
+          <div className={styles.toTop}>
+            <ArrowUp size={32} color="#fff" weight="fill" />
+          </div>
+        </a>,
+        document.getElementById("back-to-top")
       )}
     </>
   );

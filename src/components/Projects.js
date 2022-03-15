@@ -12,7 +12,6 @@ import styles from "./Projects.module.css";
 import "swiper/css";
 import "swiper/css/bundle";
 import CarouselCard from "./CarouselCard";
-import MLSC from "../assets/MLSC_logo.png";
 import BEML from "../assets/gui1.png";
 import Yelp from "../assets/yelpcamp.png";
 import PW from "../assets/ss.png";

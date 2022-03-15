@@ -6,7 +6,7 @@ import Timeline from "./Timeline";
 const About = () => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>About</h1>
+      <h1 className={styles.title}>About me!!</h1>
       <div className={styles.about}>
         <div className={styles.content}>
           I am Utkarsh Tripathi, a freshman at Thapar Institute Of Engineering

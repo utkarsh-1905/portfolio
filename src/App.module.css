@@ -35,6 +35,16 @@
   }
 }
 
+.toTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  background-color: #6666ff;
+  opacity: 50%;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .landing_container {
     flex-direction: column;
