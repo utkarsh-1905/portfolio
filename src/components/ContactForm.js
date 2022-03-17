@@ -3,7 +3,7 @@ import { ThumbsUp } from "phosphor-react";
 
 const ContactForm = () => {
   const [done, setDone] = useState(false);
-
+  const [msg, setMsg] = useState("");
   const formHandler = async (e) => {
     e.preventDefault();
     try {
@@ -25,6 +25,7 @@ const ContactForm = () => {
         }
       );
       const json = await data.json();
+      setMsg(json.message);
       if (json.status === "ok") {
         setDone(true);
       } else {
@@ -50,6 +51,11 @@ const ContactForm = () => {
           <ThumbsUp size={32} className="text-success" weight="fill" />
         </div>
       )}
+      <div
+        style={{ color: "white", fontFamily: "Nunito", fontSize: "0.75rem" }}
+      >
+        {msg}
+      </div>
       <form onSubmit={formHandler} style={{ color: "#fff" }}>
         <div class="form-group">
           <label for="exampleInputEmail1">Email address</label>
