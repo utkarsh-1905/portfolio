@@ -52,16 +52,21 @@ const ContactForm = () => {
         </div>
       )}
       <div
-        style={{ color: "white", fontFamily: "Nunito", fontSize: "0.75rem" }}
+        style={{
+          color: "white",
+          textAlign: "center",
+          fontFamily: "Nunito",
+          fontSize: "0.75rem",
+        }}
       >
         {msg}
       </div>
       <form onSubmit={formHandler} style={{ color: "#fff" }}>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
+        <div className="form-group">
+          <label htmlFor="exampleInputEmail1">Email address</label>
           <input
             type="email"
-            class="form-control mb-3"
+            className="form-control mb-3"
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
             placeholder="Enter email"
@@ -74,11 +79,11 @@ const ContactForm = () => {
             }}
           />
         </div>
-        <div class="form-group mb-3">
-          <label for="exampleInputPassword1">Name</label>
+        <div className="form-group mb-3">
+          <label htmlFor="exampleInputPassword1">Name</label>
           <input
             type="text"
-            class="form-control mb-3"
+            className="form-control mb-3"
             id="exampleInputPassword1"
             placeholder="Enter your name"
             required
@@ -89,24 +94,23 @@ const ContactForm = () => {
             }}
           />
         </div>
-        <label for="type">Query</label>
+        <label htmlFor="type">Query</label>
         <select
           id="type"
-          class="custom-select form-control mb-3"
+          className="custom-select form-control mb-3"
           style={{
             backgroundColor: "transparent",
             color: "#6666ff",
             border: "none",
           }}
+          defaultValue="Collaboration"
         >
-          <option selected value="collaboration">
-            Collaboration
-          </option>
+          <option value="collaboration">Collaboration</option>
           <option value="question">Question</option>
           <option value="internship/job">Internship / Job</option>
           <option value="freelancing">Freelancing</option>
         </select>
-        <label for="description">Description</label>
+        <label htmlFor="description">Description</label>
         <textarea
           className="form form-control mb-3"
           cols={5}
@@ -123,7 +127,7 @@ const ContactForm = () => {
         <button
           type="submit"
           style={{ margin: "auto" }}
-          class="btn btn-warning w-100 mt-3"
+          className="btn btn-warning w-100 mt-3"
         >
           Submit
         </button>

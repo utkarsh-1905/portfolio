@@ -9,7 +9,7 @@ import {
   Envelope,
   GithubLogo,
 } from "phosphor-react";
-import Resume from "../assets/resume.png";
+import Resume from "../assets/resume.pdf";
 
 const Contact = () => {
   return (
@@ -18,8 +18,10 @@ const Contact = () => {
       <div className={styles.content}>
         <div className={styles.social}>
           <p className={styles.socialText}>
-            Hey, you can find me on these social media platforms. Additionally,
-            you can reach me directly through the contact form.
+            Hey, you can find me on these{" "}
+            <span style={{ color: "#6666ff" }}>social media</span> platforms.
+            Additionally, you can reach me directly through the{" "}
+            <span style={{ color: "#6666ff" }}>contact form.</span>
           </p>
           <div className={styles.socialButtons}>
             <a className="btn btn-outline-light" href={Resume} download>

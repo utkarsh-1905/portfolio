@@ -12,10 +12,10 @@ import styles from "./Projects.module.css";
 import "swiper/css";
 import "swiper/css/bundle";
 import CarouselCard from "./CarouselCard";
-import BEML from "../assets/gui1.png";
-import Yelp from "../assets/yelpcamp.png";
-import PW from "../assets/ss.png";
-import ISS from "../assets/iss.png";
+import BEML from "../assets/gui1.webp";
+import Yelp from "../assets/yelpcamp.webp";
+import PW from "../assets/ss.webp";
+import ISS from "../assets/iss.webp";
 const Projects = () => {
   const [width, setWidth] = useState(window.innerWidth);
   useEffect(() => {
