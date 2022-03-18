@@ -10,6 +10,12 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import ReactDOM from "react-dom";
 import Footer from "./components/Footer";
+import TagManager from "react-gtm-module";
+
+const tagManagerArgs = {
+  gtmId: "G-Y05P49V84Y",
+};
+TagManager.initialize(tagManagerArgs);
 
 function App() {
   const [showArrow, setShowArrow] = useState(true);
