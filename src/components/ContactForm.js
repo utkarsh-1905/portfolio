@@ -61,7 +61,7 @@ const ContactForm = () => {
       >
         {msg}
       </div>
-      <form onSubmit={formHandler} style={{ color: "#fff" }}>
+      <form onSubmit={formHandler} style={{ color: "#fff", marginTop: "1rem" }}>
         <div className="form-group">
           <label htmlFor="exampleInputEmail1">Email address</label>
           <input
